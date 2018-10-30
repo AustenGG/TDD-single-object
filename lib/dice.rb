@@ -5,12 +5,11 @@ end
 
 def roll
   p "You rolled! "
-
 end
 
 def roll_result
-  roll = rand(1..6)
-  @score += roll
+  value = rand(1..6)
+  @score += value
 end
 
 def repeats(n)
