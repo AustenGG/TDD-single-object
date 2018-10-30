@@ -1,8 +1,8 @@
 require 'dice'
 
 describe DiceGame do
-  it 'Rolls dice' do
-    expect(subject.roll).to be_between(1, 6).inclusive
-  end
 
+  it 'Confirms a roll' do
+    expect(subject.roll).to eq("You rolled")
+  end
 end
