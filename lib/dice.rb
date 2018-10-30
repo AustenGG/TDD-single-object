@@ -1,4 +1,7 @@
 class DiceGame
+def initialize
+  @score = 0
+end
 
 def roll
   p "You rolled! "
@@ -6,7 +9,14 @@ def roll
 end
 
 def roll_result
-  p rand(1..6)
+  roll = rand(1..6)
+  @score += roll
+end
 
+def repeats(n)
+  n.times do
+    roll_result
+  end
+  p @score
 end
 end
